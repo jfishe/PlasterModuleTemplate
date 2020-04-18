@@ -1,14 +1,13 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
-<plasterManifest schemaVersion='1.1' templateType='Project' 
-  xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest schemaVersion="1.1" templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
   <metadata>
     <name>PlasterModuleTemplate</name>
-    <id>304866b2-7b6f-4ebc-8e99-903751f4722a</id>
-    <version>1.0.0</version>
+    <id>d793a245-97d2-4ed4-96ce-330213fa3b6b</id>
+    <version>0.0.1</version>
     <title>New PowerShell Module Plaster Template</title>
     <description>A Plaster template for a new PowerShell module.</description>
-    <author>Matt Bobke</author>
-    <tags></tags>
+    <author>John D. Fisher</author>
+    <tags>Module, ScriptModule, ModuleManifest</tags>
   </metadata>
   <parameters>
     <parameter name='ModuleName' type='text' prompt='Name of the module' default='${PLASTER_DestinationName}'/>
@@ -20,6 +19,7 @@
     <message>-----  Creating module directory structure -----</message>
     <file source='' destination='${PLASTER_PARAM_ModuleName}\public'/>
     <file source='' destination='${PLASTER_PARAM_ModuleName}\private'/>
+    <file source='' destination='${PLASTER_PARAM_ModuleName}\en-US'/>
     <file source='' destination='tests\'/>
     <message>-----  Creating files -----</message>
     <newModuleManifest destination='${PLASTER_PARAM_ModuleName}\${PLASTER_PARAM_ModuleName}.psd1' moduleVersion='$PLASTER_PARAM_ModuleVersion' rootModule='${PLASTER_PARAM_ModuleName}.psm1' author='$PLASTER_PARAM_ModuleAuthor' description='$PLASTER_PARAM_ModuleDesc'/>
@@ -36,5 +36,7 @@
     <templateFile source='README.md' destination=''/>
     <templateFile source='build.ps1' destination=''/>
     <templateFile source='appveyor.yml' destination =''/>
+    <templateFile source='about.help.txt' destination='${PLASTER_PARAM_ModuleName}\en-US\about_${PLASTER_PARAM_ModuleName}.help.txt'/>
   </content>
 </plasterManifest>
+
