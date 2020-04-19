@@ -20,7 +20,7 @@ $Env:PublishToRepo = 'LocalRepo1' # Default: 'PSGallery'
 # Default: 'Unknown' when building locally
 $Env:BUILD_REPOSITORY_URI = 'LocalRepo1'
 
-# Not required if you rand .\build.ps1 in the current shell
+# Not required if you ran .\build.ps1 in the current shell
 $Env:PSModulePath = "$(pwd)\_build_dependencies_\;$env:PSModulePath"
 
 Set-BuildEnvironment -Force

@@ -13,3 +13,10 @@ their work with Plaster:
     `build.ps1`, `module.Build.ps1`, `deploy.PSDeploy.ps1`, `Help.Tests.ps1`
 * Matthew Bobke who originated the [mcbobke/PlasterModuleTemplate](https://github.com/mcbobke/PlasterModuleTemplate)
 
+## Change Log
+
+* 0.0.2
+  * Add README instructions for publishing to `PSRepository`, e.g.,
+    `LocalRepo1`.
+* 0.0.1
+  * Add en-US\about.help.txt template file

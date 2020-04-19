@@ -3,7 +3,7 @@
   <metadata>
     <name>PlasterModuleTemplate</name>
     <id>d793a245-97d2-4ed4-96ce-330213fa3b6b</id>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <title>New PowerShell Module Plaster Template</title>
     <description>A Plaster template for a new PowerShell module.</description>
     <author>John D. Fisher</author>
